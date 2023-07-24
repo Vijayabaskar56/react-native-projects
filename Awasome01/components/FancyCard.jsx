@@ -6,14 +6,13 @@ export default function FancyCard() {
   return (
     <View>
       <Text style={styles.headingText}>FancyCard</Text>
-      <View style={styles.cointainer}>
+      <View style={[styles.card, styles.cardElivated]}>
             <Image source={Img} style={styles.img} />
-      </View>
       <View style={styles.cardBody}>
             <Text style={styles.cardTitle}>Madurai Startup.</Text>
             <Text style={styles.cardLabel}>!Chinnachoki Kulam</Text>
-            <Text style={styles.cardDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur unde nihil deserunt. Debitis illum hic iusto perspiciatis quidem, autem provident dignissimos similique esse delectus odit veritatis commodi voluptatum eaque!</Text>
-
+            <Text  style={styles.cardDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur unde nihil deserunt. Debitis illum hic iusto perspiciatis quidem, autem provident dignissimos similique esse delectus odit veritatis commodi voluptatum eaque!</Text>
+      </View>
       </View>
 
     </View>
@@ -33,14 +32,36 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 10,
     },
+    card: {
+        width: 350,
+        height:360,
+        borderRadius: 8,
+        // padding: 10,
+        marginVertical: 12,
+        marginHorizontal: 10,
+    },
+    cardElivated: {
+        backgroundColor: 'violet',
+        elevation: 5,
+        shadowOffset: {
+            width: 1,
+            height: 1,
+        },
+        shadowColor: 'white'
+    },
     img: {
         width: '100%',
         // objectFit: 'contain',
         height: 180,
+        marginBottom: 10,
+        borderTopLeftRadius: 6,
+        borderTopRightRadius: 6, 
+ 
     },
     cardTitle: {
         fontSize: 20,
         fontWeight: '200',
+        color: 'black',
     },
     cardLabel: {
         color: 'green',
@@ -48,5 +69,7 @@ const styles = StyleSheet.create({
     cardDescription: {
         textAlign: 'justify',
         padding: 5,
+        color: 'black',
+
     }
 })
