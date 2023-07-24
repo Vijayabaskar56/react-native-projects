@@ -1,5 +1,5 @@
-import { Text, StyleSheet, View, VirtualizedList } from 'react-native'
-import React, { Component } from 'react'
+import { Text, StyleSheet, View, VirtualizedList } from 'react-native';
+import React, { Component } from 'react';
 
 export default class FlatCard extends Component {
   render() {
@@ -8,17 +8,17 @@ export default class FlatCard extends Component {
         <Text style={styles.headingText}>Flat Cards</Text>
         <View style={styles.cointainer}>
           <View style={[styles.card, styles.cardOne]}>
-              <Text>RED</Text>
+            <Text>RED</Text>
           </View>
           <View style={[styles.card, styles.cardTwo]}>
-              <Text>GREEN</Text>
+            <Text>GREEN</Text>
           </View>
           <View style={[styles.card, styles.cardThree]}>
-              <Text>BLUE</Text>
+            <Text>BLUE</Text>
           </View>
         </View>
       </View>
-    )
+    );
   }
 }
 
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     paddingBottom: 5,
   },
-  cointainer : {
+  cointainer: {
     flex: 1,
     flexDirection: 'row',
     padding: 5,
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
   cardThree: {
     backgroundColor: 'blue',
   },
-})
+});

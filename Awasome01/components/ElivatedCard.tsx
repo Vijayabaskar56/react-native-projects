@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
@@ -12,7 +13,7 @@ export default function ElivatedCard() {
         <View style = {[styles.card, styles.cardOne]}>
             <Text>Scroll</Text>
         </View>
-        <View style = {[styles.card, styles.cardOne]}>
+        <View style={[styles.card, styles.cardOne]}>
             <Text>Scroll</Text>
         </View>
         <View style = {[styles.card, styles.cardOne]}>
@@ -42,6 +43,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         margin: 10,
+        width: '100%',
     },
     card: {
         width: 100,
