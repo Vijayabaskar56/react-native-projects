@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   headingText: {
     fontSize: 32,
     textAlign: 'center',
-    color: 'red',
+    color: 'green',
     paddingVertical: 10,
   },
   inputfield: {
